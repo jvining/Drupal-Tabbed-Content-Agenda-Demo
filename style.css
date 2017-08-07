@@ -1,0 +1,92 @@
+/* 
+Site Name: Responsive Agenda Demo
+Cycle: Development
+Office: USA
+Year: 2016
+URL: http://jvining.github.io/Drupal-Responsive-Agenda-Demo
+*/
+
+body a, body a:link, body a:hover, body a:focus{text-decoration:none!important;}
+body a:hover{cursor:pointer}
+body {text-rendering:optimizeLegibility; background:#fbfbfb; padding-top:50px; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';}
+ 	
+h1,h2,h3,h4,h5{font-weight:300;}
+[class*="col-"]{color:#666;}
+
+/* Vertical Offsets */
+.voffset {margin-top: 0.2em;}  .voffset0 {margin-top: 0.5em}
+.voffset1 {margin-top: 1em;}   .voffset2 {margin-top: 2em;} 
+.voffset3 {margin-top: 3em;}   .voffset4 {margin-top: 4em;} 
+.voffset5 {margin-top: 5em;}   .voffset6 {margin-top: 6em;}
+.voffset7 {margin-top: 7em;}   .voffset8 {margin-top: 8em;}
+.voffset9 {margin-top: 9em;}   .voffsetx {margin-top: 10em;}
+ 
+footer{margin: 50px 0;}
+
+/*** // Agenda Day Specific CSS // ***/
+
+/* View More/Less Toggle / Full Width Panel Reset / Multi-Track Container Background Reset */
+#agenad-day #toggle {margin:15px 0px;}
+#agenad-day .agenda-track {display:inline-block; width:100%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+#agenad-day .row.well {max-width:1140px; margin:1em auto; padding:0px;}
+
+/* Panel Header styling */
+#agenad-day .panel .panel-heading h3.panel-title {font-size:1.3em; color:#666;}
+#agenad-day .panel .panel-heading h4 {font-size:.9em; color:#666;}
+ 
+/* Panel Header Speaker Citations styling */
+#agenad-day .panel .panel-heading a {font-size:.75em;}   
+#agenad-day .panel .panel-heading a.session-moderator{display:block;}
+#agenad-day .panel .panel-heading a.session-moderator:before {content:"Moderator: "; color:#666; font-weight:700;}
+#agenad-day .panel .panel-heading a.session-speaker:before {content:"Speakers: "; color:#666; font-weight:700;}
+#agenad-day .panel .panel-heading a.session-speaker + a.session-speaker:before {content:none;}
+#agenad-day .panel .panel-title i {color:#999;}
+
+/* Speaker Image Styling */
+#agenad-day .speaker-image{-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;}
+
+/* 2-3-4 Multi-Track Vertical Spacing */
+#agenad-day [class*="-track-row"] [class*="col-"]:first-child{margin-top:0px;}
+#agenad-day [class*="-track-row"] [class*="col-"]{margin-top:10px;}
+#agenad-day [class*="-track-row"] [class*="col-"]:last-child{margin-bottom:0px;}
+
+/* Speaker Container Styling */
+#agenad-day .container-speaker .row {margin-bottom:.5em;}
+
+/* 2-3-4 Multi-Track Color Overlay */
+#agenad-day .first-track > .panel-heading  {background-color:#E3EEF7;}
+#agenad-day .second-track > .panel-heading {background-color:#E7F5E7;}
+#agenad-day .third-track > .panel-heading  {background-color:#FDF3E4;}
+#agenad-day .fourth-track > .panel-heading {background-color:#FAE5E5;}
+
+/* Bootstrap 5 Columns */
+.col-xs-5ths, .col-sm-5ths, .col-md-5ths, .col-lg-5ths {position: relative; min-height: 1px; padding:0px 5px; width: 20%; float: left;}
+@media (min-width: 768px) {.col-sm-5ths {width: 20%; float: left;}}
+@media (min-width: 992px) {.col-md-5ths {width: 20%; float: left;}}
+@media (min-width: 1200px) {.col-lg-5ths {width: 20%; float: left;}}
+#agenad-day .tab-content .col-md-5ths .panel.panel-default{ margin:10px 0px;}
+
+/* 5+ Tabbed Content Navigation */
+#agenad-day .nav-pills > li{margin:.5em;}
+#agenad-day .nav-pills > li.active>a{color:#565656;}
+#agenad-day .nav-pills > li > a{color:#565656;}
+#agenad-day .nav-pills > li:nth-child(1)>a {background-color:#E3EEF7;}
+#agenad-day .nav-pills > li:nth-child(2)>a {background-color:#E7F5E7;}
+#agenad-day .nav-pills > li:nth-child(3)>a {background-color:#E6F6FA;}
+#agenad-day .nav-pills > li:nth-child(4)>a {background-color:#FDF3E4;}
+#agenad-day .nav-pills > li:nth-child(5)>a {background-color:#FAE5E5;}
+
+/* 5+ Tabbed Content Section */
+#agenad-day .tab-content .tab-pane{margin-top:5px; padding:10px;}
+#agenad-day .tab-content .tab-pane:nth-child(1) {background-color:#E3EEF7;}
+#agenad-day .tab-content .tab-pane:nth-child(2) {background-color:#E7F5E7;}
+#agenad-day .tab-content .tab-pane:nth-child(3) {background-color:#E6F6FA;}
+#agenad-day .tab-content .tab-pane:nth-child(4) {background-color:#FDF3E4;}
+#agenad-day .tab-content .tab-pane:nth-child(5) {background-color:#FAE5E5;}
+
+/* 5+ Tabbed Content Section Tracks */
+#agenad-day .tab-content .panel-group [class*="col-"]:nth-child(2) .panel-heading {background-color:#CAE3F7;}
+#agenad-day .tab-content .panel-group [class*="col-"]:nth-child(3) .panel-heading {background-color:#C8F4C8;}
+#agenad-day .tab-content .panel-group [class*="col-"]:nth-child(4) .panel-heading {background-color:#CCF0F9;}
+#agenad-day .tab-content .panel-group [class*="col-"]:nth-child(5) .panel-heading {background-color:#FCEACF;}
+#agenad-day .tab-content .panel-group [class*="col-"]:nth-child(6) .panel-heading {background-color:#F9CCCC;}
